@@ -78,7 +78,7 @@ export default function CaseStudyAcionamentoSeguro() {
                 <h3 id="desafio-heading-acionamento" className={blockH3}>
                   <span className="inline-flex items-center gap-3">
                     <Target className={icon} aria-hidden />
-                    o Desafio
+                    O Desafio
                   </span>
                 </h3>
                 <p className={body}>
@@ -348,7 +348,15 @@ export default function CaseStudyAcionamentoSeguro() {
             </h2>
             <ul className={`${listBase} ${body}`}>
               <li>
-                <strong className="font-bold text-typography-primary">Validação de Hipóteses:</strong> Realizei testes de usabilidade via Maze (10 usuários) que confirmaram a clareza da jornada "zero a um", provando que o fluxo longo era compensado pela segurança e transparência das informações.
+                <strong className="font-bold text-typography-primary">Validação de Hipóteses:</strong> Realizei testes de usabilidade via Maze (10 usuários) que confirmaram a clareza da jornada "zero a um", provando que o fluxo longo era compensado pela segurança e transparência das informações.{' '}
+                <a
+                  href="https://app.maze.co/report/Perda-de-renda-CLT/1jyav7mlv9jvcw/intro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-accent-cyan underline decoration-white/20 underline-offset-2 transition-colors hover:text-accent-cyan-bright hover:decoration-accent-cyan/60"
+                >
+                  Ver teste
+                </a>
               </li>
               <li>
                 <strong className="font-bold text-typography-primary">Eficiência e Design System:</strong> Entrega de uma jornada 100% aderente ao regulatório, construída com componentes do Design System, o que garantiu velocidade de implementação e consistência visual.

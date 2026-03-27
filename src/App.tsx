@@ -397,7 +397,7 @@ function App() {
 
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-[12px]">
-        <div className="max-w-container mx-auto px-6 md:px-8 flex items-center justify-between h-20">
+        <div className="mx-auto w-full max-w-[56rem] px-6 md:px-8 flex items-center justify-between h-20">
           <a href="#" className="font-semibold text-typography-primary text-lg tracking-tight hover:text-accent-cyan transition-colors duration-300">
             Portfólio
           </a>
@@ -417,7 +417,7 @@ function App() {
 
       <main className="relative">
         {/* Hero */}
-        <section className="pt-32 md:pt-40 pb-section-lg max-w-container mx-auto px-6 md:px-8">
+        <section className="pt-32 md:pt-40 pb-section-lg mx-auto w-full max-w-[56rem] px-6 md:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-8">
               <h1 className="text-hero md:text-hero-lg font-extrabold text-typography-primary max-w-2xl leading-[1.1] tracking-tight">
@@ -445,7 +445,7 @@ function App() {
         </section>
 
         {/* Featured Projects - Bento Box (1 em cima, 2 embaixo) */}
-        <section id="projects" className="py-section max-w-container mx-auto px-6 md:px-8">
+        <section id="projects" className="py-section mx-auto w-full max-w-[56rem] px-6 md:px-8">
           <h2 className="text-section font-semibold text-typography-primary mb-16">
             Projetos em Destaque
           </h2>
@@ -461,7 +461,7 @@ function App() {
         </section>
 
         {/* Impact Metrics - animação com motion */}
-        <section className="py-section max-w-container mx-auto px-6 md:px-8">
+        <section className="py-section mx-auto w-full max-w-[56rem] px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {impactMetrics.map((metric, index) => (
                 <motion.div
@@ -503,7 +503,7 @@ function App() {
             maxOpacity={0.4}
             flickerChance={0.1}
           />
-          <div className="container relative z-10 max-w-container mx-auto px-6 md:px-8">
+          <div className="relative z-10 mx-auto w-full max-w-[56rem] px-6 md:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Coluna 1: Título, subtítulo e cards escaneáveis */}
               <div className="text-left space-y-8">
@@ -604,7 +604,7 @@ function App() {
         </section>
 
         {/* About & Experience - Cards verticais */}
-        <section id="experience" className="py-section max-w-container mx-auto px-6 md:px-8">
+        <section id="experience" className="py-section mx-auto w-full max-w-[56rem] px-6 md:px-8">
           <h2 className="text-section font-semibold text-typography-primary mb-12">
             Experiência
           </h2>
@@ -617,7 +617,7 @@ function App() {
         </section>
 
         {/* CTA - Currículo LinkedIn */}
-        <section className="py-section max-w-container mx-auto px-6 md:px-8">
+        <section className="py-section mx-auto w-full max-w-[56rem] px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -645,7 +645,7 @@ function App() {
 
         {/* Footer */}
         <footer className="relative z-10 py-12 border-t border-white/10">
-          <div className="max-w-container mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="mx-auto w-full max-w-[56rem] px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-typography-secondary text-sm">
               © {new Date().getFullYear()} Portfólio de Senior Product Designer
             </p>
