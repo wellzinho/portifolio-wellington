@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "name": "FlowMatic Design System",
+    "version": "1.0.0",
+    "theme": "dark-mode",
+    "visualLanguage": "Futuristic Tech / High-Tech SaaS",
+    "atmosphere": "Professional, cutting-edge, data-driven with vibrant neon accents against deep dark backgrounds",
+    "purpose": "Guia de design de alto nível para instruir IA e desenvolvedores a replicar a aparência FlowMatic"
+  },
+
+  "designPrinciples": {
+    "contrast": "Alto contraste entre texto e fundo para legibilidade máxima",
+    "glow": "Usar box-shadow com blur alto e opacidade baixa em cores de destaque para simular brilhos neon em cards e botões",
+    "consistency": "Manter o padrão de grid no background em todas as seções",
+    "hierarchy": "Clara hierarquia visual: títulos em branco puro, corpo em cinza médio, labels em uppercase com letter-spacing aumentado",
+    "breathing": "Espaçamento generoso entre seções para sensação premium e respirável",
+    "microInteractions": "Transições suaves no hover para cards (levitação sutil ou brilho na borda)"
+  },
+
+  "colorPalette": {
+    "background": {
+      "primary": "#050505",
+      "secondary": "#0A0A0A",
+      "description": "Preto profundo / Charcoal como base"
+    },
+    "surface": {
+      "card": "rgba(20, 20, 20, 0.8)",
+      "cardBorder": "#1F1F23",
+      "description": "Cinza escuro com leve transparência para glassmorphism"
+    },
+    "accent": {
+      "gradient": {
+        "start": "#FF3385",
+        "end": "#FF8C66",
+        "description": "Gradiente neon rosa para coral/laranja - botões primários, headings-chave, visualizações de dados"
+      },
+      "secondary": {
+        "cyan": "#00D4FF",
+        "description": "Ciano/Electric blue para hero e destaques sutis"
+      }
+    },
+    "typography": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "description": "Branco puro para títulos prioritários; cinza médio para corpo e descrições"
+    },
+    "borders": {
+      "subtle": "#1F1F23",
+      "light": "rgba(255, 255, 255, 0.1)",
+      "description": "Bordas muito finas e sutis para cards e inputs"
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "primary": ["Inter", "Geist", "Plus Jakarta Sans", "system-ui", "sans-serif"],
+      "mono": ["ui-monospace", "Consolas", "monospace"]
+    },
+    "headings": {
+      "hero": {
+        "weight": 800,
+        "size": "4rem",
+        "sizeRem": 64,
+        "letterSpacing": "-0.02em",
+        "lineHeight": 1.1,
+        "color": "primary"
+      },
+      "section": {
+        "weight": 600,
+        "size": "2.5rem",
+        "sizeRem": 40,
+        "letterSpacing": "-0.01em",
+        "color": "primary"
+      },
+      "subsection": {
+        "weight": 600,
+        "size": "1.5rem",
+        "color": "primary"
+      }
+    },
+    "body": {
+      "weight": 400,
+      "size": "1rem",
+      "sizePx": 16,
+      "lineHeight": 1.6,
+      "color": "secondary"
+    },
+    "labels": {
+      "transform": "uppercase",
+      "letterSpacing": "0.05em",
+      "weight": 600,
+      "size": "0.75rem",
+      "color": "secondary",
+      "description": "Labels de categoria como 'STRATEGIC ASSESSMENT'"
+    }
+  },
+
+  "layout": {
+    "container": {
+      "maxWidth": "1280px",
+      "padding": "0 2rem",
+      "margin": "0 auto"
+    },
+    "sectionSpacing": {
+      "vertical": "8rem",
+      "verticalLarge": "10rem",
+      "description": "Gaps verticais grandes entre seções"
+    },
+    "grid": {
+      "background": "Padrão de grid fino com linhas quadradas sutilmente visíveis - sensação de 'blueprint' ou técnico",
+      "lineColor": "rgba(255, 255, 255, 0.05)",
+      "lineWidth": "1px"
+    }
+  },
+
+  "borderRadius": {
+    "card": "1.5rem",
+    "cardPx": 24,
+    "button": "9999px",
+    "buttonAlt": "0.75rem",
+    "input": "0.75rem"
+  },
+
+  "components": {
+    "navigation": {
+      "background": "transparent",
+      "style": "minimalista",
+      "links": "Texto simples, sem decoração pesada",
+      "cta": {
+        "style": "pill-shaped",
+        "background": "gradient primary (pink-to-orange)",
+        "text": "branco",
+        "padding": "0.75rem 1.5rem"
+      }
+    },
+    "hero": {
+      "layout": "texto à esquerda, imagem/3D à direita",
+      "contentAlignment": "left",
+      "imageStyle": "Render 3D de alta qualidade com iluminação neon",
+      "description": "Headline grande à esquerda; visual impactante (pessoa com VR headset, neon) à direita"
+    },
+    "cards": {
+      "glassmorphism": true,
+      "background": "rgba(20, 20, 20, 0.8)",
+      "backdropFilter": "blur(12px)",
+      "border": "1px solid rgba(255, 255, 255, 0.1)",
+      "borderRadius": "1.5rem",
+      "padding": "2rem",
+      "innerGlow": "Sombra suave ou glow muito leve para separar do grid de fundo",
+      "hover": "Leve lift ou brilho na borda"
+    },
+    "buttons": {
+      "primary": {
+        "background": "gradient(#FF3385, #FF8C66)",
+        "text": "#FFFFFF",
+        "borderRadius": "9999px (pill) ou 0.75rem",
+        "hover": "Leve brightening ou glow"
+      },
+      "secondary": {
+        "background": "transparent",
+        "border": "1px solid rgba(255, 255, 255, 0.2)",
+        "text": "primary ou secondary",
+        "hover": "border mais brilhante ou background sutil"
+      },
+      "ghost": {
+        "background": "transparent",
+        "text": "com ícone",
+        "hover": "background sutil"
+      }
+    },
+    "inputs": {
+      "background": "dark (similar ao surface)",
+      "border": "sutil, 1px",
+      "borderRadius": "0.75rem",
+      "placeholder": "cinza muted (#A1A1AA)"
+    },
+    "dataVisualization": {
+      "barCharts": {
+        "barStyle": "topos arredondados",
+        "fill": "gradient pink-to-orange"
+      },
+      "lineCharts": {
+        "curve": "spline suave",
+        "lineStyle": "neon glow effect na linha"
+      },
+      "progressBars": {
+        "track": "espesso",
+        "fill": "gradient"
+      }
+    },
+    "blogCards": {
+      "layout": "vertical",
+      "structure": [
+        "imagem no topo (border-radius grande)",
+        "tag de categoria",
+        "título",
+        "descrição",
+        "footer com avatar circular pequeno e autor"
+      ],
+      "imageBorderRadius": "1rem"
+    }
+  },
+
+  "effects": {
+    "glassmorphism": {
+      "enabled": true,
+      "background": "rgba(20, 20, 20, 0.6-0.8)",
+      "backdropFilter": "blur(12px-20px)",
+      "border": "1px solid rgba(255, 255, 255, 0.1)"
+    },
+    "neonGlow": {
+      "enabled": true,
+      "formula": "box-shadow: 0 0 20px rgba(255, 51, 133, 0.3) ou similar com cor de destaque",
+      "usage": "Botões, cards em hover, linhas de gráficos, elementos de destaque"
+    },
+    "gridBackground": {
+      "enabled": true,
+      "pattern": "grid de quadrados finos",
+      "purpose": "Sensação técnica/blueprint em todo o layout"
+    }
+  },
+
+  "spacing": {
+    "scale": [4, 8, 12, 16, 24, 32, 48, 64, 96, 128],
+    "unit": "px",
+    "cardPadding": "2rem",
+    "sectionGap": "8rem"
+  },
+
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+
+  "implementationNotes": {
+    "tailwind": "Usar dark mode como padrão; variáveis CSS para cores; backdrop-blur para glassmorphism",
+    "gradients": "bg-gradient-to-r from-[#FF3385] to-[#FF8C66] para accent principal",
+    "shadows": "shadow-[0_0_20px_rgba(255,51,133,0.3)] para glow neon",
+    "gridBg": "Considerar SVG ou CSS conic-gradient para padrão de grid sutil"
+  }
+}
