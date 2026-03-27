@@ -367,7 +367,7 @@ function ProjectCard({ project, index, compact = false }: { project: (typeof fea
   if ('casePath' in project && project.casePath) {
     const to = project.casePath
     return (
-      <Link to={to} className={className} reloadDocument>
+      <Link to={to} className={className}>
         {inner}
       </Link>
     )
