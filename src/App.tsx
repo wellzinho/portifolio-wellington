@@ -444,6 +444,36 @@ function App() {
           </div>
         </section>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {impactMetrics.map((metric, index) => (
+              <motion.div
+                key={index}
+                custom={index}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-50px' }}
+                transition={{ delay: index * 0.1, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="group relative p-8 rounded-card border border-white/[0.08] bg-cimento-queimado/80 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-white/[0.12] hover:bg-cimento-queimado-hover/90 hover:shadow-[0_0_24px_rgba(255,51,133,0.15)]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/5 to-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="relative">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 + index * 0.1, duration: 0.6 }}
+                    className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent mb-2"
+                  >
+                    {metric.prefix}<AnimatedCounter target={metric.value} suffix={metric.suffix} />
+                  </motion.div>
+                  <p className="text-typography-secondary text-base font-medium">
+                    {metric.label}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+        </div>
+
         {/* Featured Projects - Bento Box (1 em cima, 2 embaixo) */}
         <section id="projects" className="py-section max-w-container mx-auto px-6 md:px-8">
           <h2 className="text-section font-semibold text-typography-primary mb-16">
@@ -457,39 +487,6 @@ function App() {
             {/* Cards 2 e 3 - lado a lado embaixo */}
             <ProjectCard project={featuredProjects[1]} index={1} compact />
             <ProjectCard project={featuredProjects[2]} index={2} compact />
-          </div>
-        </section>
-
-        {/* Impact Metrics - animação com motion */}
-        <section className="py-section max-w-container mx-auto px-6 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {impactMetrics.map((metric, index) => (
-                <motion.div
-                  key={index}
-                  custom={index}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-50px' }}
-                  transition={{ delay: index * 0.1, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="group relative p-8 rounded-card border border-white/[0.08] bg-cimento-queimado/80 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-white/[0.12] hover:bg-cimento-queimado-hover/90 hover:shadow-[0_0_24px_rgba(255,51,133,0.15)]"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/5 to-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative">
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.2 + index * 0.1, duration: 0.6 }}
-                      className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent mb-2"
-                    >
-                      {metric.prefix}<AnimatedCounter target={metric.value} suffix={metric.suffix} />
-                    </motion.div>
-                    <p className="text-typography-secondary text-base font-medium">
-                      {metric.label}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
           </div>
         </section>
 
