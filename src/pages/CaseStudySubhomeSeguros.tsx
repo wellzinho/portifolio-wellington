@@ -161,12 +161,71 @@ export default function CaseStudySubhomeSeguros() {
             <h2 id="prototipacao-heading-subhome" className={`${sectionH2} mb-2`}>
               Prototipação e Refinamento
             </h2>
-            <p className={body}>
-              Com base nos insights de dados, estruturei uma hierarquia de informações focada em conversão e usabilidade. Criei fluxos que permitem ao usuário gerenciar
-              apólices e acionar serviços de forma ágil. As propostas foram refinadas através de ciclos de feedback com stakeholders, garantindo alinhamento entre as
-              metas de negócio e as necessidades do usuário.{' '}
-              <a href="https://www.figma.com/design/BDgOHsNn37XDhAhjH1ZKv3/nova-home?node-id=1-7964&t=2ZECJ7pFdpPocPgA-1" target="_blank" rel="noopener noreferrer" className="font-medium text-accent-cyan underline underline-offset-2 transition-colors hover:text-accent-cyan/80">Ver protótipo</a>
-            </p>
+            <div className="space-y-6">
+              <p className={body}>
+                A refatoração da subhome de seguros não foi um exercício de estética, mas de arquitetura de decisão. O desafio era apresentar produtos complexos (Vida e
+                Renda) e ofertas isoladas (Stand-alone) de forma que o usuário não se sentisse &quot;bombardeado&quot; por ofertas, mas sim &quot;protegido&quot; por
+                soluções.
+              </p>
+
+              <div className="space-y-5">
+                <section className="space-y-2">
+                  <h3 className={`${body} font-bold text-typography-primary`}>1. A Hero Vision: Proteção em Primeiro Lugar</h3>
+                  <p className={body}>
+                    No topo da hierarquia, estabeleci uma <em className="font-medium text-typography-primary">Hero Section</em> dinâmica. O objetivo foi dar visibilidade
+                    imediata aos seguros contratáveis de forma isolada, criando um ponto de entrada direto e sem distrações. Isso resolve a dor de quem busca uma solução
+                    específica, removendo camadas de navegação.
+                  </p>
+                </section>
+
+                <section className="space-y-2">
+                  <h3 className={`${body} font-bold text-typography-primary`}>2. Atalhos Estratégicos: Redução de Fricção</h3>
+                  <p className={body}>
+                    Logo abaixo da Hero, posicionei os atalhos de gestão para reduzir a carga cognitiva (
+                    <em className="font-medium text-typography-primary">Cognitive Load</em>). O usuário que já é cliente não quer procurar como acionar o seguro: ele
+                    precisa de acessibilidade imediata. A proximidade dos botões de gestão com a oferta principal reforça a sensação de controle sobre o produto.
+                  </p>
+                </section>
+
+                <section className="space-y-2">
+                  <h3 className={`${body} font-bold text-typography-primary`}>3. O Gancho do Diferencial: A Prova Social do Sorteio</h3>
+                  <p className={body}>
+                    Introduzi o card de Sorteios Mensais como elemento de quebra de padrão. Ele não é apenas um benefício; é um gatilho emocional que diferencia a meutudo.
+                    do mercado tradicional e frio de seguros. Ao destacar o valor do prêmio e a proximidade do próximo sorteio, transformamos a manutenção do seguro em
+                    expectativa positiva (ganho), e não apenas em custo (perda).
+                  </p>
+                </section>
+
+                <section className="space-y-2">
+                  <h3 className={`${body} font-bold text-typography-primary`}>4. Scroll Progressivo vs. Carga Cognitiva</h3>
+                  <p className={body}>
+                    Para novas ofertas, utilizei scroll vertical segmentado. Em vez de uma grade densa, os produtos aparecem de forma sequencial. Essa técnica de{' '}
+                    <em className="font-medium text-typography-primary">Progressive Disclosure</em> garante que o usuário processe uma oferta por vez, evita paralisia de
+                    escolha e mantém a interface mobile-first moderna e leve, alinhada aos padrões de players como Nubank.
+                  </p>
+                </section>
+
+                <section className="space-y-2">
+                  <h3 className={`${body} font-bold text-typography-primary`}>5. Humanização e Branding</h3>
+                  <p className={body}>
+                    O resultado final afasta a percepção de crédito consignado para um posicionamento de seguro e cuidado. A hierarquia de cores e o espaçamento generoso (
+                    <em className="font-medium text-typography-primary">whitespace</em>) foram calibrados para transmitir transparência e confiança, elementos fundamentais
+                    para conversão em produtos de proteção financeira.
+                  </p>
+                </section>
+              </div>
+
+              <p className={body}>
+                <a
+                  href="https://www.figma.com/design/BDgOHsNn37XDhAhjH1ZKv3/nova-home?node-id=1-7964&t=2ZECJ7pFdpPocPgA-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-accent-cyan underline underline-offset-2 transition-colors hover:text-accent-cyan/80"
+                >
+                  Ver protótipo
+                </a>
+              </p>
+            </div>
           </section>
 
           <section className="relative mb-20 overflow-hidden rounded-2xl border border-white/[0.08] bg-cimento-queimado/30 p-5 md:mb-28 md:p-8">

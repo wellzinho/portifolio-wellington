@@ -287,7 +287,7 @@ const featuredProjects = [
   },
   {
     title: 'Redesign da Subhome de Seguros',
-    description: 'Reestruturação completa da experiência de seguros, melhorando navegação, clareza e usabilidade em todo o produto.',
+    description: 'Hierarquia visual orquestrada, desvinculando o crédito para priorizar conversão e LTV através de fluxos fluidos e provas sociais',
     tag: 'Fintech / Seguros',
     icon: CreditCard,
     mediaLabel: 'Subhome de seguros',
