@@ -278,7 +278,7 @@ function HeroVisual() {
 const featuredProjects = [
   {
     title: 'Jornada de Acionamento de Seguro',
-    description: 'Fluxo crítico para usuários acionarem seguros, com foco em clareza e confiança em momentos sensíveis.',
+    description: 'Fluxo crítico de sinistro projetado para reduzir a carga cognitiva, gerando 85% de Task Success e 15% menos chamados no suporte',
     tag: 'UX / Design de Serviço',
     icon: Receipt,
     mediaLabel: 'Fluxo de acionamento',
@@ -287,7 +287,7 @@ const featuredProjects = [
   },
   {
     title: 'Redesign da Subhome de Seguros',
-    description: 'Hierarquia visual orquestrada, desvinculando o crédito para priorizar conversão e LTV através de fluxos fluidos e provas sociais',
+    description: 'Design estratégico para seguros, desvinculando o crédito para gerar +40% de engajamento e +15% de conversão',
     tag: 'Fintech / Seguros',
     icon: CreditCard,
     mediaLabel: 'Subhome de seguros',
@@ -381,9 +381,9 @@ function ProjectCard({ project, index, compact = false }: { project: (typeof fea
 }
 
 const impactMetrics = [
-  { value: 40, prefix: '-', suffix: '%', label: 'de redução em bloqueios indevidos de conta' },
+  { value: 40, prefix: '+', suffix: '%', label: 'de engajamento devido a padronização de cards e escaneabilidade' },
   { value: 30, prefix: '-', suffix: '%', label: 'no tempo na aprovação de transações' },
-  { value: 15, prefix: '+', suffix: '%', label: 'aumento na satisfação do usuário feita através da análise SUS' },
+  { value: 15, prefix: '-', suffix: '%', label: 'de ligação para o suporte para abertura de sinistro' },
 ]
 
 function App() {

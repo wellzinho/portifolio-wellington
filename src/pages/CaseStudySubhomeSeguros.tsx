@@ -354,6 +354,25 @@ src="/novahome/imagem4.png"
                     </p>
                   </div>
                 </li>
+                <li className="flex gap-4 md:gap-5">
+                  <span className={resultIconWrap} aria-hidden>
+                    <BarChart3 className="h-5 w-5" strokeWidth={2} />
+                  </span>
+                  <div className="min-w-0 space-y-1.5">
+                    <p className={`${body} font-bold text-typography-primary`}>Métricas de Impacto</p>
+                    <ul className={`${body} list-disc space-y-1 pl-5`}>
+                      <li>
+                        <strong className="font-semibold text-typography-primary">+40% de Engajamento:</strong> Através da padronização de cards e aumento da escaneabilidade, elevamos a interação com ofertas secundárias que antes eram ignoradas.
+                      </li>
+                      <li>
+                        <strong className="font-semibold text-typography-primary">+15% em Conversão Stand-alone:</strong> O destaque visual estratégico e a hierarquia clara na Hero Section impulsionaram a contratação direta de produtos isolados.
+                      </li>
+                      <li>
+                        <strong className="font-semibold text-typography-primary">-25% de Drop-off (Abandono):</strong> A redução da carga cognitiva e a padronização dos CTAs garantiram uma jornada fluida, mantendo o usuário no funil até a conclusão.
+                      </li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>

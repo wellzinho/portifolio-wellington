@@ -35,6 +35,8 @@ const mediaFrame =
 /** Respiro vertical entre seções de texto / mídia */
 const sectionGap = 'mb-16 md:mb-24'
 const blockGap = 'mb-10 md:mb-14'
+const resultIconWrap =
+  'flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-accent-cyan/25 bg-accent-cyan/[0.07] text-accent-cyan shadow-[0_0_24px_-8px_rgba(34,211,238,0.35)]'
 
 export default function CaseStudyAcionamentoSeguro() {
   return (
@@ -388,13 +390,54 @@ export default function CaseStudyAcionamentoSeguro() {
             />
           </figure>
 
+          <section className={`${sectionGap} space-y-6`} aria-labelledby="metricas-heading-acionamento">
+            <h2 id="metricas-heading-acionamento" className={`${sectionH2} mb-2`}>
+              Resultados
+            </h2>
+            <ul className="space-y-6 md:space-y-7">
+              <li className="flex gap-4 md:gap-5">
+                <span className={resultIconWrap} aria-hidden>
+                  <Target className="h-5 w-5" strokeWidth={2} />
+                </span>
+                <div className="min-w-0 space-y-1.5">
+                  <p className={`${body} font-bold text-typography-primary`}>85% de Task Success Rate:</p>
+                  <p className={body}>
+                    Indice de sucesso na conclusão da jornada self-service logo no primeiro acesso, validando a eficácia da arquitetura de informação em fluxos de alta complexidade.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4 md:gap-5">
+                <span className={resultIconWrap} aria-hidden>
+                  <BookOpen className="h-5 w-5" strokeWidth={2} />
+                </span>
+                <div className="min-w-0 space-y-1.5">
+                  <p className={`${body} font-bold text-typography-primary`}>90% de Assertividade em Documentos:</p>
+                  <p className={body}>
+                    Evitando re-trabalho operacional devido à clareza na hierarquia da tela de anexos, garantindo o envio correto de documentos na primeira tentativa.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4 md:gap-5">
+                <span className={resultIconWrap} aria-hidden>
+                  <Users className="h-5 w-5" strokeWidth={2} />
+                </span>
+                <div className="min-w-0 space-y-1.5">
+                  <p className={`${body} font-bold text-typography-primary`}>-15% de Overload no Suporte:</p>
+                  <p className={body}>
+                    Redução direta no volume de chamados telefônicos para abertura de sinistros, provando a autonomia gerada pelo design intuitivo e empático
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
           {/* Conclusão */}
           <section className="mb-20 md:mb-24" aria-labelledby="conclusao-heading-acionamento">
             <h2 id="conclusao-heading-acionamento" className={`${sectionH2} mb-6 md:mb-8`}>
               Conclusão
             </h2>
             <p className={body}>
-              Acionar Seguro traduziu burocracia em clareza: construímos uma jornada nativa para perda de renda CLT, conectando front-stage e back-stage com um Service Blueprint que elimina fricções técnicas. Com Design System e IA no workflow, garantimos transparência, eficiência e confiança desde o primeiro documento até o acompanhamento do sinistro. Após as validar a jornada a mesma serviu como jornada core para replicar nas coberturas de invalidez por acidente, perda de renda PJ e morte acidental.
+              Acionar Seguro traduziu burocracia em clareza, eu construi uma jornada nativa para perda de renda CLT, conectando front-stage e back-stage com um Service Blueprint que elimina fricções técnicas. Com Design System e IA no workflow, garantindo transparência, eficiência e confiança desde o primeiro documento até o acompanhamento do sinistro. Após as validar a jornada a mesma serviu como jornada core para replicar nas coberturas de invalidez por acidente, perda de renda PJ e morte acidental.
             </p>
           </section>
         </div>
