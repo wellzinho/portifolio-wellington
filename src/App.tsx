@@ -305,6 +305,15 @@ const featuredProjects = [
     mediaImage: '/imagensTrinus/Imagem2.png',
     mediaImageOffsetX: 24,
   },
+  {
+    title: 'IA-First Landing Page para Especialidade Médica',
+    description: 'Entrega 70% mais rápida e redução de 70% no ruído de atendimento via WhatsApp.',
+    tag: 'IA-First / Conversão',
+    icon: Sparkles,
+    mediaLabel: 'Landing Page Médica',
+    casePath: '/case/lading-page-medica-ia-first',
+    mediaImage: '/imagemMedico/medicacapa.png?v=2',
+  },
 ]
 
 /* --- Project Card (bento - supports compact variant) --- */
@@ -480,13 +489,19 @@ function App() {
             Projetos em Destaque
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Card 1 - full width em cima */}
+            {/* Card 1 - full width */}
             <div className="lg:col-span-2">
               <ProjectCard project={featuredProjects[0]} index={0} />
             </div>
-            {/* Cards 2 e 3 - lado a lado embaixo */}
+
+            {/* Cards compactos */}
             <ProjectCard project={featuredProjects[1]} index={1} compact />
             <ProjectCard project={featuredProjects[2]} index={2} compact />
+
+            {/* Novo card - full width para manter padrão bento */}
+            <div className="lg:col-span-2">
+              <ProjectCard project={featuredProjects[3]} index={3} />
+            </div>
           </div>
         </section>
 
